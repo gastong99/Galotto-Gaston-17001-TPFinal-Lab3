@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Banda - Indumentaria Deportiva</title>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="icon" type="imagenes" href="../imagenes/logoMarca.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <a href="../html/index.html" class="logo-container">
+                <img src="../imagenes/logoMarca.jpg" class="logoMarca" alt="Logo">
+            </a>
+            
+            <div class="header-bottom">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="../html/index.html" class="nav-item">INICIO</a></li>
+                        <li><a href="../html/quienesSomos.html" class="nav-item">QUIÉNES SOMOS</a></li>
+                        <li><a href="../html/preguntas.html" class="nav-item">PREGUNTAS FRECUENTES</a></li>
+                        <li><a href="#contactos" class="nav-item">CONTACTOS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="contenedor-index">
+            <div class="info">
+                <h1>★ PRODUCTOS DISPONIBLES ★</h1>
+            </div>
+            <div class="buscador">
+                <input type="text" id="filtro" placeholder="Buscar producto..." class="filtro-busqueda">
+            </div>
+            <div class="contenedor-nombres">
+                <div class="contenedor"></div>
+            </div>
+
+            <div class="botones-section">
+                <div class="boton-index">
+                    <div class="section section-productos">
+                        <img src="../imagenes/btnProductos.jpg" alt="Productos" class="imagen">
+                        <button onclick="window.location.href='../html/adminProductos.html'" class="btn-overlay">Productos</button>
+                    </div>
+                </div>
+                <div class="boton-index">
+                    <div class="section section-gestion">
+                        <img src="../imagenes/btnGestion.jpg" alt="Geston" class="imagen">
+                        <button onclick="window.location.href='../html/adminCategorias.html'" class="btn-overlay">Categorías</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer" id="contactos">
+            <div class="footer-section">
+                <h3 class="footer-title">CONTACTANOS</h3>
+                <div class="footer-item">
+                    <img src="../imagenes/logoWA.jpg" class="logo" alt="WhatsApp">
+                    <p class="text">3564-520614</p>
+                </div>
+                <div class="footer-item">
+                    <a href="https://www.instagram.com/gastongalotto_/" class="footer-link" target="_blank" rel="noopener noreferrer">
+                        <img src="../imagenes/logoIG.jpg" class="logo" alt="Instagram">
+                        <p class="text">Instagram</p>
+                    </a>
+                </div>
+                <div class="footer-item">
+                    <a href="https://www.facebook.com/gastong14/" class="footer-link" target="_blank" rel="noopener noreferrer">
+                        <img src="../imagenes/logoFB.jpg" class="logo" alt="Facebook">
+                        <p class="text">Facebook</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">DIRECCIÓN</h3>
+                <div class="footer-item">
+                    <a href="https://maps.app.goo.gl/CiLwPCGdgXHauXTh9" class="footer-link" target="_blank" rel="noopener noreferrer">
+                        <img src="../imagenes/logoUbi.jpg" class="logo" alt="Ubicación">
+                        <p class="text">Lunes a Viernes</p>
+                        <p class="text">  8 a 12 hs  </p>
+                        <p class="text">  16 a 20 hs  </p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/funciones.js"></script>
+        <script src="../js/mostrarListadoIndex.js"></script>
+    </body>
+</html>
